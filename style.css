@@ -1,5 +1,5 @@
 * {
-    box-sizing: 100%;
+    box-sizing: border-box;
   }
 
 h1 {
@@ -24,4 +24,11 @@ h1 {
     justify-content: center;
     align-items: center; 
     
+}
+
+.button {
+    font-style:italic;
+    color: rgb(21, 35, 44);
+    font-weight: bold;
+    font-family:system-ui;
 }
