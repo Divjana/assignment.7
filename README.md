@@ -1,11 +1,8 @@
 # assignment.7
-<<<<<<< Updated upstream
+
 First assignment in php!
 
-
 Requirements for the project are following:
-
-
 
 1. The data you will be using is in data.php.
 
@@ -28,9 +25,3 @@ Requirements for the project are following:
 10. The repository should contain a README.md file with documentation.
 
 11. The repository should contain a LICENSE file. Preferably MIT.
-
-
-=======
-
-First assignment in php - Data
->>>>>>> Stashed changes
