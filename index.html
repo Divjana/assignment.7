@@ -1,8 +1,93 @@
 <!DOCTYPE html>
+
+<link rel="stylesheet" href="/style.css" />
+
 <body> 
 
+    <header>
 <h1>Fotball Teams</h1>
+</header>
 
+<div class="data">
+    <?php
+
+    $teams = [
+        'Arsenal' => [
+            'league' => 'Premier league',
+            'last-time-champions' => 2004,
+            'city' => 'London',
+            'url' => 'https://www.arsenal.com/'
+        ],
+        'Aston Villa' => [
+            'league' => 'Premier league',
+            'last-time-champions' => 1981,
+            'city' => 'Birmingham',
+            'url' => 'https://www.avfc.co.uk/'
+        ],
+        'Manchester City' => [
+            'league' => 'Premier league',
+            'last-time-champions' => 2023,
+            'city' => 'Manchester',
+            'url' => 'https://www.mancity.com/'
+        ],
+        'Newcastle' => [
+            'league' => 'Premier league',
+            'last-time-champions' => 1927,
+            'city' => 'Newcastle',
+            'nickname' => 'Magpies',
+            'url' => 'https://www.nufc.co.uk/'
+        ],
+        'Chelsea' => [
+            'league' => 'Premier league',
+            'last-time-champions' => 2017,
+            'city' => 'London',
+            'url' => 'https://www.chelseafc.com/en'
+        ],
+        'Watford' => [
+            'league' => 'Championship',
+            'last-time-champions' => null,
+            'city' => 'London',
+            'url' => 'https://www.watfordfc.com/'
+        ],
+        'Brighton' => [
+            'league' => 'Premier league',
+            'last-time-champions' => null,
+            'city' => 'Brighton',
+            'url' => 'https://www.brightonandhovealbion.com/'
+        ],
+    ];
+    
+
+    foreach ($teams as $teamName => $teamData) :
+    ?>
+        Team: <?php echo $teamName; ?><br>
+        League: <?php echo $teamData['league']; ?><br>
+        Last Time Champions: <?php
+                                if (isset($teamData['last-time-champions'])) {
+                                    echo $teamData['last-time-champions'];
+                                } else {
+                                    echo "They have never been champions unfortunately.";
+                                }
+                                ?><br>
+        City: <?php echo $teamData['city']; ?><br>
+        <?php
+        if (isset($teamData['nickname'])) :
+        ?>
+            Nickname: <?php echo $teamData['nickname']; ?><br>
+        <?php endif; ?>
+        URL: <a href="<?php echo $teamData['url']; ?>"><?php echo $teamData['url']; ?></a><br>
+        <br>
+    <?php endforeach;
+    ?>
+
+</div>
+<picture>
+    <img src="https://a1.espncdn.com/combiner/i?img=%2Fphoto%2F2021%2F0211%2Fr813517_1296x729_16%2D9.jpg" alt="Manchester City" width="400">
+    <p>The last champions of Premier League</p>
+  <picture>
+<footer>
+  <?php require __DIR__.'/footer.php'; ?>
+</footer>
 </body>
 </html>
 

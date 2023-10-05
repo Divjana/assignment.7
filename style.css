@@ -1,15 +1,27 @@
+* {
+    box-sizing: 100%;
+  }
+
 h1 {
     display: flex;
-    margin-bottom: 1.5rem;
     font-size: 3rem;
     font-weight: bold;
     color: rgb(62, 74, 138);
-    box-sizing: border-box;
+    text-align: center;
   }
 
   body {
    background-color: rgb(211, 203, 192); 
-   font-family: "Playfair Display", serif;
-   box-sizing: border-box;
-
   }
+
+  .data { 
+    font-family: serif;
+    font-size: 18px;
+}
+
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+    
+}
