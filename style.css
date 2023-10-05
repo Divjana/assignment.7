@@ -1,34 +1,62 @@
 * {
-    box-sizing: border-box;
-  }
+    background-color: rgb(229, 227, 215);
+}
 
-h1 {
-    display: flex;
-    font-size: 3rem;
-    font-weight: bold;
-    color: rgb(62, 74, 138);
+body, h1, p {
+    margin: 0;
+    padding: 15;
     text-align: center;
-  }
-
-  body {
-   background-color: rgb(211, 203, 192); 
-  }
-
-  .data { 
-    font-family: serif;
-    font-size: 18px;
 }
 
-.footer {
+header {
+    background-color: #b4b0a1;
+    color: #243d6c;
+    text-align: center;
+}
+
+
+.data {
+    margin: 20px;
     display: flex;
-    justify-content: center;
-    align-items: center; 
-    
+    flex-wrap: wrap;
 }
+
+.team-row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -10px;
+}
+
+.team {
+    flex: 1;
+    max-width: calc(33.33% - 20px);
+    margin: 10px;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
 
 .button {
-    font-style:italic;
-    color: rgb(21, 35, 44);
-    font-weight: bold;
-    font-family:system-ui;
+    text-align: center;
+    margin: 20px;
+
+}
+
+.button a {
+    background-color: #243d6c;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
+picture {
+    text-align: center;
+    margin: 20px;
+}
+
+footer {
+    background-color: #b4b0a1;
+    text-align: center;
+    padding: 10px 0;
 }
