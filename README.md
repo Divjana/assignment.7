@@ -1,4 +1,5 @@
 # assignment.7
+<<<<<<< Updated upstream
 First assignment in php!
 
 
@@ -29,3 +30,7 @@ Requirements for the project are following:
 11. The repository should contain a LICENSE file. Preferably MIT.
 
 
+=======
+
+First assignment in php - Data
+>>>>>>> Stashed changes
