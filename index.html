@@ -10,7 +10,7 @@
 
 <div>
 
-    <?php echo "To view all the unique cities, click"?> <a href="/city.php"> <?php echo "here!"; ?></a> <br><br><br>
+   <p> <?php echo "To view all the unique cities, click"?> <a href="/city.php"> <?php echo "here!"; ?></a> <br><br><br> 
 
 </div>
 
@@ -66,6 +66,7 @@
 
     foreach ($teams as $teamName => $teamData) :
     ?>
+    <div class="team">
         Team: <?php echo $teamName; ?><br>
         League: <?php echo $teamData['league']; ?><br>
         Last Time Champions: <?php
@@ -83,6 +84,7 @@
         <?php endif; ?>
         URL: <a href="<?php echo $teamData['url']; ?>"><?php echo $teamData['url']; ?></a> <br>
         <br><br><br>
+    </div>
     <?php endforeach;
     ?>
 
@@ -92,6 +94,7 @@
     
    <?php echo "WANT TO KNOW HOW MANY TEAMS THERE ARE?"?> <a href="/total.php"> <?php echo "Click here to find out!"; ?></a> 
    <br><br><br>
+</body>
 
 </div>
 <picture>
@@ -101,6 +104,6 @@
 <footer>
   <?php require __DIR__.'/footer.php'; ?>
 </footer>
-</body>
+
 </html>
 

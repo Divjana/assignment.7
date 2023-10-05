@@ -3,8 +3,6 @@
 }
 
 body, h1, p {
-    margin: 0;
-    padding: 15;
     text-align: center;
 }
 
@@ -16,23 +14,16 @@ header {
 
 
 .data {
-    margin: 20px;
     display: flex;
     flex-wrap: wrap;
-}
-
-.team-row {
-    display: flex;
-    flex-wrap: wrap;
-    margin-right: -10px;
+    justify-content: space-between;
 }
 
 .team {
-    flex: 1;
-    max-width: calc(33.33% - 20px);
-    margin: 10px;
-    border: 1px solid #ccc;
-    padding: 10px;
+    width: calc(33.33% - 20px); /* 33.33% width with some margin between teams */
+    margin-bottom: 20px;
+    border: 1px solid #243d6c;
+    box-sizing: border-box;
 }
 
 
@@ -52,11 +43,11 @@ header {
 
 picture {
     text-align: center;
-    margin: 20px;
+
 }
 
 footer {
     background-color: #b4b0a1;
     text-align: center;
-    padding: 10px 0;
+    padding: 10px;
 }
