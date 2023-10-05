@@ -45,3 +45,24 @@ $teams = [
         'url' => 'https://www.brightonandhovealbion.com/'
     ],
 ];
+
+foreach ($teams as $teamName => $teamDetails) :
+?>
+    Team: <?php echo $teamName; ?><br>
+    League: <?php echo $teamDetails['league']; ?><br>
+    Last Time Champions: <?php
+                            if ($teamDetails['last-time-champions'] !== null) {
+                                echo $teamDetails['last-time-champions'];
+                            } else {
+                                echo " ";
+                            }
+                            ?><br>
+    City: <?php echo $teamDetails['city']; ?><br>
+    <?php
+    if (isset($teamDetails['nickname'])) :
+    ?>
+        Nickname: <?php echo $teamDetails['nickname']; ?><br>
+    <?php endif; ?>
+    URL: <?php echo $teamDetails['url']; ?><br>
+    <br>
+<?php endforeach;
